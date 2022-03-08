@@ -26,7 +26,8 @@ parse:
 
 # HTML-specific settings
 html:
-  extra-navbar: ""
+  use_repository_button : true
+  extra-navbar          : ""
 
 # LaTeX-specific settings
 latex:
@@ -35,5 +36,5 @@ latex:
 # Launch button settings
 repository:
   url          : https://github.com/Covariance/DnD-math-basics
-  path_to_book : ""
+  path_to_book : "."
   branch       : master
