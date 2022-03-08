@@ -1,0 +1,1018 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advantage and Disadvantage &#8212; Math Behind D&amp;D</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Duality of dual wielding" href="dual.html" />
+    <link rel="prev" title="First and foremost" href="math.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Math Behind D&D</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   What type of player are you?
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="math.html">
+   First and foremost
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Advantage and Disadvantage
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dual.html">
+   Duality of dual wielding
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/advantage.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Covariance/DnD-math-basics/master?urlpath=tree/advantage.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Advantage and Disadvantage
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ability-checks-and-saving-throws-alas-poor-advantage">
+   Ability checks and saving throws: Alas, poor advantage!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advantage-versus-3-bonus-fight">
+     Advantage versus +3 bonus: fight!
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-contenders-resistance-guidance">
+     New contenders: resistance &amp; guidance!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attacks-from-zero-to-hero">
+   Attacks: from zero to hero!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-old-contender-bless">
+     New-old contender: bless.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#honorable-mention-elven-accuracy">
+       Honorable mention: Elven Accuracy
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Advantage and Disadvantage</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Advantage and Disadvantage
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ability-checks-and-saving-throws-alas-poor-advantage">
+   Ability checks and saving throws: Alas, poor advantage!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advantage-versus-3-bonus-fight">
+     Advantage versus +3 bonus: fight!
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-contenders-resistance-guidance">
+     New contenders: resistance &amp; guidance!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attacks-from-zero-to-hero">
+   Attacks: from zero to hero!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-old-contender-bless">
+     New-old contender: bless.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#honorable-mention-elven-accuracy">
+       Honorable mention: Elven Accuracy
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="advantage-and-disadvantage">
+<h1>Advantage and Disadvantage<a class="headerlink" href="#advantage-and-disadvantage" title="Permalink to this headline">¶</a></h1>
+<p>When you have advantage, you roll two d20 and choose the highest. Disadvantage is same, but you choose the lowest.
+Let’s write some code and calculate expectation and deviation:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># rolls[name] are actual rolls of a {name} method, i.e. a number on dice to be used</span>
+<span class="n">rolls</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># It is not very different from outcomes[name], but this separation will come in handy later</span>
+<span class="n">outcomes</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [2],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># rolls[name] are actual rolls of a {name} method, i.e. a number on dice to be used</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">rolls</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># It is not very different from outcomes[name], but this separation will come in handy later</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">outcomes</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="ne">NameError</span>: name &#39;Array&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># It&#39;s very easy to calculate roll results for both advantage and disadvantage</span>
+<span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span>    <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)])</span>
+<span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)])</span>
+
+<span class="c1"># Outcomes for this methods are the same as their rolls</span>
+<span class="k">for</span> <span class="n">method</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">,</span> <span class="s1">&#39;disadvantage&#39;</span><span class="p">):</span>
+    <span class="n">outcomes</span><span class="p">[</span><span class="n">method</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="n">method</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [3],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># It&#39;s very easy to calculate roll results for both advantage and disadvantage</span>
+<span class="nn">----&gt; 2 rolls[&#39;advantage&#39;]    = array([max(x, y) for x in range(1, 21) for y</span> in <span class="ni">range</span><span class="nt">(1, 21)])</span>
+<span class="nn">      3 rolls[&#39;disadvantage&#39;] = array([min(x, y) for x in range(1, 21) for y</span> in <span class="ni">range</span><span class="nt">(1, 21)])</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Outcomes for this methods are the same as their rolls</span>
+
+<span class="ne">NameError</span>: name &#39;array&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Advantage expectation:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Disadvantage expectation: </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+
+<span class="s1">Advantage deviation:      </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Disadvantage deviation:   </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [4],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">2</span><span class="s1"> Advantage expectation:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s1"> Disadvantage expectation: </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s1"> </span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s1"> Advantage deviation:      </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s1"> Disadvantage deviation:   </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s1"> &#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;outcomes&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>As it can be seen, advantage adds <span class="math notranslate nohighlight">\(3.325\)</span> to the mean and disadvantage subtracts the same value, while both of their deviations are lowered by somewhat around <span class="math notranslate nohighlight">\(11\)</span>, which means improved consistency of throws (if you don’t know to what values I’m talking, be sure to check the <span class="xref myst">Math</span> section).</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="ability-checks-and-saving-throws-alas-poor-advantage">
+<h1>Ability checks and saving throws: Alas, poor advantage!<a class="headerlink" href="#ability-checks-and-saving-throws-alas-poor-advantage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="advantage-versus-3-bonus-fight">
+<h2>Advantage versus +3 bonus: fight!<a class="headerlink" href="#advantage-versus-3-bonus-fight" title="Permalink to this headline">¶</a></h2>
+<p>As we have just seen, advantage must be strictly better than a +<span class="math notranslate nohighlight">\(3\)</span> bonus, because it’s more consistent (bare bonus has same deviation as usual roll, <span class="math notranslate nohighlight">\(33.25\)</span>) and it’s mean value is higher than that of bare +<span class="math notranslate nohighlight">\(3\)</span> bonus, which will be equal to <span class="math notranslate nohighlight">\(13.5\)</span>. But is it really <em>better</em> in all situations? Let’s find out.</p>
+<p>Here’s the graphic that shows probability to succeed on a check while having either +<span class="math notranslate nohighlight">\(3\)</span> bonus to it or an advantage.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># It&#39;s even easier to calculate roll results for +3 bonus,</span>
+<span class="c1"># because it&#39;s just a flat roll</span>
+<span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
+
+<span class="c1"># And its outcome is increased by 3</span>
+<span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [5],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># It&#39;s even easier to calculate roll results for +3 bonus,</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># because it&#39;s just a flat roll</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># And its outcome is increased by 3</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">3</span>
+
+<span class="ne">NameError</span>: name &#39;arange&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We consider all possible DCs from 0 to 25</span>
+<span class="n">DCs</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
+
+<span class="c1"># dc_pass[name] contains list of probabilities for the {name} method to succeed</span>
+<span class="c1"># on the saving throw with DC corresponding to an index</span>
+<span class="n">dc_pass</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># This method calculates the dc_pass value for the specified method by simply</span>
+<span class="c1"># checking whether each one of the outcomes would succeed and taking mean</span>
+<span class="c1"># of resulting array of 0s and 1s, resulting in probability of success.</span>
+<span class="k">def</span> <span class="nf">calculate_dc_pass_for_method</span><span class="p">(</span><span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">dc_pass</span><span class="p">[</span><span class="n">method</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">([(</span><span class="n">outcomes</span><span class="p">[</span><span class="n">method</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">DC</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">for</span> <span class="n">DC</span> <span class="ow">in</span> <span class="n">DCs</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [6],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># We consider all possible DCs from 0 to 25</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">DCs</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># dc_pass[name] contains list of probabilities for the {name} method to succeed</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># on the saving throw with DC corresponding to an index</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">dc_pass</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="ne">NameError</span>: name &#39;arange&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_dc_pass_for_method</span><span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">)</span>
+<span class="n">calculate_dc_pass_for_method</span><span class="p">(</span><span class="s1">&#39;+3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [7],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">calculate_dc_pass_for_method</span><span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">calculate_dc_pass_for_method</span><span class="p">(</span><span class="s1">&#39;+3&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;calculate_dc_pass_for_method&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bonus +3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability to succeed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;DC&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [8],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bonus +3&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability to succeed&quot;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Сounterintuitively, in <em>some</em> cases constant bonus is better than advantage. It can be seen that when Difficulty Class is bigger or equal to <span class="math notranslate nohighlight">\(18\)</span>, constant bonus is strictly better in terms of probability.</p>
+<p>It happens because when rolling with advantage, but without any bonuses, you just <em>can’t</em> get any value that exceeds <span class="math notranslate nohighlight">\(20\)</span>, but with bare bonus the result can be up to <span class="math notranslate nohighlight">\(23\)</span>, which results in bare bonus being better against high DC.</p>
+</div>
+<div class="section" id="new-contenders-resistance-guidance">
+<h2>New contenders: resistance &amp; guidance!<a class="headerlink" href="#new-contenders-resistance-guidance" title="Permalink to this headline">¶</a></h2>
+<p>Disclaimer: I will not write resistance &amp; guidance every time. Instead, I will call it <em>residence</em>. No explanation provided.</p>
+<p>Effect of the <em>residence</em> is quite simple: it adds d4 to the saving throw (resistance) or an ability check (guidance).</p>
+<p>It seems that the <em>residence</em> spell is inferior to both +<span class="math notranslate nohighlight">\(3\)</span> bonus and advantage, because it’s mean is equal to <span class="math notranslate nohighlight">\(13\)</span>, and it’s deviation is even bigger than deviation of usual roll - <span class="math notranslate nohighlight">\(34.5\)</span> against <span class="math notranslate nohighlight">\(33.25\)</span>! But our intuition failed us once, so let’s give <em>residence</em> a try.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Residence rolls are just a bare rolls of d20, but for each one we need 4 copies</span>
+<span class="c1"># (to make shape the same as outcomes)</span>
+<span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">repeat</span><span class="p">(</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># But d4 is added to each outcome</span>
+<span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="n">bare</span> <span class="o">+</span> <span class="n">bonus</span> <span class="k">for</span> <span class="n">bonus</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="k">for</span> <span class="n">bare</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)])</span>
+
+<span class="n">calculate_dc_pass_for_method</span><span class="p">(</span><span class="s1">&#39;residence&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [9],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Residence rolls are just a bare rolls of d20, but for each one we need 4 copies</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># (to make shape the same as outcomes)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">repeat</span><span class="p">(</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># But d4 is added to each outcome</span>
+<span class="nn">      6 outcomes[&#39;residence&#39;] = array([bare + bonus for bonus in range(1, 5) for bare</span> in <span class="ni">range</span><span class="nt">(1, 21)])</span>
+
+<span class="ne">NameError</span>: name &#39;repeat&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bonus +3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">],</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Residence&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability to succeed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;DC&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [10],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bonus +3&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">],</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Residence&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>We were almost right, in <strong>most</strong> cases, <em>residence</em> is slightly inferior than +<span class="math notranslate nohighlight">\(3\)</span> bonus, and it behaves in almost the same way - it overcomes advantage on some AC values. But if you’re perceptive enough, you can see, that in the very end of the graphic <em>bless</em> overcomes +<span class="math notranslate nohighlight">\(3\)</span> bonus. It happens, when DC is equal to <span class="math notranslate nohighlight">\(24\)</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Chances to pass DC 23:</span>
+<span class="s1">Residence: </span><span class="si">{</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">][</span><span class="mi">24</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Bonus +3:  </span><span class="si">{</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">][</span><span class="mi">24</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Advantage: </span><span class="si">{</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">][</span><span class="mi">24</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [11],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s1"> Chances to pass DC 23:</span>
+<span class="ne">----&gt; </span><span class="mi">3</span><span class="s1"> Residence: </span><span class="si">{</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">][</span><span class="mi">24</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s1"> Bonus +3:  </span><span class="si">{</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">][</span><span class="mi">24</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s1"> Advantage: </span><span class="si">{</span><span class="n">dc_pass</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">][</span><span class="mi">24</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s1"> &#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;dc_pass&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Why does this happen? Simply because +<span class="math notranslate nohighlight">\(3\)</span> bonus can’t pass <span class="math notranslate nohighlight">\(24\)</span> DC, while <em>residence</em> can do this on crit and <span class="math notranslate nohighlight">\(4\)</span> rolled on an additional dice.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="attacks-from-zero-to-hero">
+<h1>Attacks: from zero to hero!<a class="headerlink" href="#attacks-from-zero-to-hero" title="Permalink to this headline">¶</a></h1>
+<p>Advantage may make poor impression when talking about ability checks and saving throws. But in terms of attacking it really shines. It happens mostly because of crit on the roll of <span class="math notranslate nohighlight">\(20\)</span> and guaranteed miss on the roll of <span class="math notranslate nohighlight">\(1\)</span>. Let’s put advantage back on it’s pedestal!</p>
+<p>First, let’s compare <strong>chances to hit</strong> an enemy while having advantage and +<span class="math notranslate nohighlight">\(3\)</span> bonus to the attack:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simple method to determine whether an attack with the specified</span>
+<span class="c1"># roll(s) and outcome(s) hits the target with the specified AC</span>
+<span class="k">def</span> <span class="nf">hits</span><span class="p">(</span><span class="n">AC</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">roll</span><span class="p">:</span> <span class="n">Array</span><span class="p">,</span> <span class="n">outcome</span><span class="p">:</span> <span class="n">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Array</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">((</span><span class="n">outcome</span> <span class="o">&gt;=</span> <span class="n">AC</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">roll</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">))</span> <span class="o">|</span> <span class="p">(</span><span class="n">roll</span> <span class="o">==</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># We are considering all possible ACs from 0 to 25</span>
+<span class="n">ACs</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
+
+<span class="c1"># Almost the same thing as dc_pass:</span>
+<span class="c1"># it holds the list of probabilities to hit for specified method</span>
+<span class="n">ac_hits</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># And, again, simple method to calculate it</span>
+<span class="k">def</span> <span class="nf">calculate_ac_hits_for_method</span><span class="p">(</span><span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">ac_hits</span><span class="p">[</span><span class="n">method</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="n">hits</span><span class="p">(</span><span class="n">AC</span><span class="p">,</span> <span class="n">rolls</span><span class="p">[</span><span class="n">method</span><span class="p">],</span> <span class="n">outcomes</span><span class="p">[</span><span class="n">method</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">for</span> <span class="n">AC</span> <span class="ow">in</span> <span class="n">ACs</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [12],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Simple method to determine whether an attack with the specified</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># roll(s) and outcome(s) hits the target with the specified AC</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="k">def</span> <span class="nf">hits</span><span class="p">(</span><span class="n">AC</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">roll</span><span class="p">:</span> <span class="n">Array</span><span class="p">,</span> <span class="n">outcome</span><span class="p">:</span> <span class="n">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Array</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="k">return</span> <span class="p">((</span><span class="n">outcome</span> <span class="o">&gt;=</span> <span class="n">AC</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">roll</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">))</span> <span class="o">|</span> <span class="p">(</span><span class="n">roll</span> <span class="o">==</span> <span class="mi">20</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># We are considering all possible ACs from 0 to 25</span>
+
+<span class="ne">NameError</span>: name &#39;Array&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_ac_hits_for_method</span><span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">)</span>
+<span class="n">calculate_ac_hits_for_method</span><span class="p">(</span><span class="s1">&#39;+3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [13],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">calculate_ac_hits_for_method</span><span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">calculate_ac_hits_for_method</span><span class="p">(</span><span class="s1">&#39;+3&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;calculate_ac_hits_for_method&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_hits</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_hits</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability to hit&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [14],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_hits</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_hits</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability to hit&quot;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>As it can be seen, now advantage is looking much better, but bare bonus still surpasses it on high values of AC, on the segment from <span class="math notranslate nohighlight">\(18\)</span> to <span class="math notranslate nohighlight">\(23\)</span> to be exact.</p>
+<p>Talking about attacks, we must consider not only when attack hits or not, but also about damage of that attack. And, as you remember, we roll twice as many damage dice on a critical hit. Let us consider simple <a class="reference external" href="https://roll20.net/compendium/dnd5e/Club#h-Club">club</a> as our weapon, because even with it’s small damage die, advantage will shine. Let’s calculate it now!</p>
+<p><strong>P.S.:</strong> we would consider different weapons later on, as well as corresponding feats.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let us consider a character with 10 Strength, i.e. +0 modifier. </span>
+<span class="c1"># For such character, mean damage and mean crit damage of the club would be:</span>
+<span class="n">club_damage_mean</span> <span class="o">=</span> <span class="mf">2.5</span>
+<span class="n">club_damage_crit_mean</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Method to calculate the damage (mean for club) from an attack with</span>
+<span class="c1"># specified roll and outcome against specified AC</span>
+<span class="k">def</span> <span class="nf">damages</span><span class="p">(</span><span class="n">AC</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">roll</span><span class="p">:</span> <span class="n">Array</span><span class="p">,</span> <span class="n">outcome</span><span class="p">:</span> <span class="n">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Array</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">club_damage_mean</span> <span class="o">*</span> <span class="p">((</span><span class="n">outcome</span> <span class="o">&gt;=</span> <span class="n">AC</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">roll</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">roll</span> <span class="o">!=</span> <span class="mi">20</span><span class="p">))</span> <span class="o">+</span> <span class="n">club_damage_crit_mean</span> <span class="o">*</span> <span class="p">(</span><span class="n">roll</span> <span class="o">==</span> <span class="mi">20</span><span class="p">)</span> 
+    
+<span class="c1"># Almost the same thing as ac_hits but now with damage attached to it:</span>
+<span class="c1"># it holds the list of mean damage for specified method</span>
+<span class="n">ac_damages</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Array</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># And, again, a method to calculate it</span>
+<span class="k">def</span> <span class="nf">calculate_damages_for_method</span><span class="p">(</span><span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">ac_damages</span><span class="p">[</span><span class="n">method</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="n">damages</span><span class="p">(</span><span class="n">AC</span><span class="p">,</span> <span class="n">rolls</span><span class="p">[</span><span class="n">method</span><span class="p">],</span> <span class="n">outcomes</span><span class="p">[</span><span class="n">method</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">for</span> <span class="n">AC</span> <span class="ow">in</span> <span class="n">ACs</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [16],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Method to calculate the damage (mean for club) from an attack with</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># specified roll and outcome against specified AC</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="k">def</span> <span class="nf">damages</span><span class="p">(</span><span class="n">AC</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">roll</span><span class="p">:</span> <span class="n">Array</span><span class="p">,</span> <span class="n">outcome</span><span class="p">:</span> <span class="n">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Array</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="k">return</span> <span class="n">club_damage_mean</span> <span class="o">*</span> <span class="p">((</span><span class="n">outcome</span> <span class="o">&gt;=</span> <span class="n">AC</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">roll</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">roll</span> <span class="o">!=</span> <span class="mi">20</span><span class="p">))</span> <span class="o">+</span> <span class="n">club_damage_crit_mean</span> <span class="o">*</span> <span class="p">(</span><span class="n">roll</span> <span class="o">==</span> <span class="mi">20</span><span class="p">)</span> 
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># Almost the same thing as ac_hits but now with damage attached to it:</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># it holds the list of mean damage for specified method</span>
+
+<span class="ne">NameError</span>: name &#39;Array&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">)</span>
+<span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;+3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [17],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;+3&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;calculate_damages_for_method&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Mean damage&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [18],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Mean damage&quot;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now advantage greatly overcomes bare bonus in most cases, except for AC values of <span class="math notranslate nohighlight">\(19\)</span>, <span class="math notranslate nohighlight">\(20\)</span> and <span class="math notranslate nohighlight">\(21\)</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">AC</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Mean damages for AC </span><span class="si">{</span><span class="n">AC</span><span class="si">}</span><span class="s1">:</span>
+<span class="s1">Bonus +3:  </span><span class="si">{</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">][</span><span class="n">AC</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Advantage: </span><span class="si">{</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">][</span><span class="n">AC</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [19],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">for</span> <span class="n">AC</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s1"> Mean damages for AC </span><span class="si">{</span><span class="n">AC</span><span class="si">}</span><span class="s1">:</span>
+<span class="ne">----&gt; </span><span class="mi">4</span><span class="s1"> Bonus +3:  </span><span class="si">{</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">][</span><span class="n">AC</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s1"> Advantage: </span><span class="si">{</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">][</span><span class="n">AC</span><span class="p">]</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s1"> &#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;ac_damages&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="new-old-contender-bless">
+<h2>New-old contender: bless.<a class="headerlink" href="#new-old-contender-bless" title="Permalink to this headline">¶</a></h2>
+<p><em>Bless</em> spell affects attack rolls in the same way as <em>residence</em> affects saving throws and ability checks: by adding a d4 to the result.</p>
+<p>Let’s include it in our competition for damage averages:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rolls and outcomes for bless are the same as for residence</span>
+<span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;bless&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span>
+<span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;bless&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">Input In [20],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Rolls and outcomes for bless are the same as for residence</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;bless&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;bless&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;residence&#39;</span><span class="p">]</span>
+
+<span class="ne">KeyError</span>: &#39;residence&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;bless&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [21],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;bless&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;calculate_damages_for_method&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;bless&#39;</span><span class="p">],</span>     <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bless&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Mean damage&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [22],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;bless&#39;</span><span class="p">],</span>     <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bless&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Bless</em> overcomes advantage on AC of <span class="math notranslate nohighlight">\(20\)</span> and bare +<span class="math notranslate nohighlight">\(3\)</span> bonus on AC of <span class="math notranslate nohighlight">\(23\)</span>, but in other cases it’s strictly inferior.</p>
+<div class="section" id="honorable-mention-elven-accuracy">
+<h3>Honorable mention: Elven Accuracy<a class="headerlink" href="#honorable-mention-elven-accuracy" title="Permalink to this headline">¶</a></h3>
+<p>This feat is incredible in my opinion. Let’s calculate expectation and deviation of a roll that is affected by this <em>triple-advantage feat</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)])</span>
+<span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [23],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="nn">----&gt; 1 rolls[&#39;elven&#39;] = array([max(x, y, z) for x in range(1, 21) for y in range(1, 21) for z</span> in <span class="ni">range</span><span class="nt">(1, 21)])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rolls</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span>
+
+<span class="ne">NameError</span>: name &#39;array&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Advantage expectation:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Advantage deviation:      </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [24],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">2</span><span class="s1"> Advantage expectation:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s1"> Advantage deviation:      </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s1"> &#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;outcomes&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>This feat adds <span class="math notranslate nohighlight">\(4.9875\)</span> to the expectation and reduces deviation by somewhat around <span class="math notranslate nohighlight">\(18\)</span>, which means <strong>greatly</strong> improved consistency.</p>
+<p>Let’s just check it’s damage average compared to usual advantage and +<span class="math notranslate nohighlight">\(3\)</span> bonus:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;elven&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [25],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">calculate_damages_for_method</span><span class="p">(</span><span class="s1">&#39;elven&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;calculate_damages_for_method&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">],</span>     <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Elven Accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Mean damage&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;AC&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [26],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Advantage&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;+3&#39;</span><span class="p">],</span>        <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;+3 bonus&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ac_damages</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">],</span>     <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Elven Accuracy&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>As it can be easily seen, <em>elven accuracy</em> is far superior than any other type of bonus. We have a honorably mentioned winner!</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="math.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">First and foremost</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="dual.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Duality of dual wielding</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Pavel Martynov (Covariance)<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
