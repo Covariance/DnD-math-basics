@@ -1,0 +1,23 @@
+# Book settings
+title  : Math Behind D&D
+author : Pavel Martynov (Covariance)
+
+# Execution settings
+execute:
+  execute_notebooks : force
+  allow_errors      : true
+  stderr_output     : show
+
+# Parse and render settings
+
+# HTML-specific settings
+
+# LaTeX-specific settings
+latex:
+  latex-engine: xelatex
+
+# Launch button settings
+repository:
+  url          : https://github.com/Covariance/DnD-math-basics
+  path_to_book : ""
+  branch       : master

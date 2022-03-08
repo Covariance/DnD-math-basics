@@ -13,6 +13,9 @@ It is mostly about combat and your efficiency as a character in combat. It also 
 If you're a DM and you have to considered throwing at players some evil genius or just very exeperienced combatant, consider that he (or she) will most probably act in the most efficient way possible. Also this will help you analyze the upcoming battle and make some important decisions. It may seem like a giant effort for nothing, but overall it's just useful and interesting information to know.
 
 ## Table of Contents
-1) [Basic math behind it all](./Math.ipynb)
-2) [Advantages of advantage](./Advantage.ipynb)
-3) [Duality of dual wielding](./Dual.ipynb)
+1) [Basic math behind it all](math.ipynb)
+2) [Advantages of advantage](advantage.ipynb)
+3) [Duality of dual wielding](dual.ipynb)
+
+## Credits
+The book is build using [GitHub Actions](https://github.com/actions) and [Jupyter Book](https://jupyterbook.org/intro.html).

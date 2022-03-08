@@ -1,0 +1,8 @@
+format: jb-book
+root:   README
+
+chapters:
+- file: math
+- file: advantage
+- file: dual
+
