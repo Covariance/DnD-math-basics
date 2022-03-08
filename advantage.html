@@ -163,6 +163,19 @@ const thebe_selector_output = ".output, .cell_output"
 
             <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Covariance/DnD-math-basics"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -177,7 +190,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/Covariance/DnD-math-basics/master?urlpath=tree/advantage.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Covariance/DnD-math-basics/master?urlpath=tree/./advantage.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -410,6 +423,7 @@ Disadvantage variance:    22.194375
 </div>
 <p>Сounterintuitively, in <em>some</em> cases constant bonus is better than advantage. It can be seen that when Difficulty Class is bigger or equal to <span class="math notranslate nohighlight">\(18\)</span>, constant bonus is strictly better in terms of probability.</p>
 <p>It happens because when rolling with advantage, but without any bonuses, you just <em>can’t</em> get any value that exceeds <span class="math notranslate nohighlight">\(20\)</span>, but with bare bonus the result can be up to <span class="math notranslate nohighlight">\(23\)</span>, which results in bare bonus being better against high DC.</p>
+<p>Also, with a bare bonus there’s a <span class="math notranslate nohighlight">\(100\%\)</span> probability to pass the DC when it is below <span class="math notranslate nohighlight">\(5\)</span>, because minimal outcome of a roll with +<span class="math notranslate nohighlight">\(3\)</span> is a <span class="math notranslate nohighlight">\(4\)</span>, but roll with advantage still has a small probability to fail even on the smallest DCs.</p>
 </div>
 <div class="section" id="new-contenders-resistance-guidance">
 <h3>New contenders: resistance &amp; guidance!<a class="headerlink" href="#new-contenders-resistance-guidance" title="Permalink to this headline">¶</a></h3>
@@ -435,7 +449,7 @@ Disadvantage variance:    22.194375
 <img alt="_images/advantage_15_0.png" src="_images/advantage_15_0.png" />
 </div>
 </div>
-<p>We were almost right, in <strong>most</strong> cases, <em>residence</em> is slightly inferior than +<span class="math notranslate nohighlight">\(3\)</span> bonus, and it behaves in almost the same way - it overcomes advantage on some AC values. But if you’re perceptive enough, you can see, that in the very end of the graphic <em>bless</em> overcomes +<span class="math notranslate nohighlight">\(3\)</span> bonus. It happens, when DC is equal to <span class="math notranslate nohighlight">\(24\)</span>:</p>
+<p>We were almost right, in <strong>most</strong> cases, <em>residence</em> is slightly inferior than +<span class="math notranslate nohighlight">\(3\)</span> bonus, and it behaves in almost the same way - it overcomes advantage on some AC values. But if you’re perceptive enough, you can see, that in the very end of the graphic <em>residence</em> overcomes +<span class="math notranslate nohighlight">\(3\)</span> bonus. It happens, when DC is equal to <span class="math notranslate nohighlight">\(24\)</span>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
@@ -599,7 +613,7 @@ Advantage: 0.4875
 <img alt="_images/advantage_34_0.png" src="_images/advantage_34_0.png" />
 </div>
 </div>
-<p><em>Bless</em> overcomes advantage on AC of <span class="math notranslate nohighlight">\(20\)</span> and bare +<span class="math notranslate nohighlight">\(3\)</span> bonus on AC of <span class="math notranslate nohighlight">\(23\)</span>, but in other cases it’s strictly inferior.</p>
+<p><em>Bless</em> overcomes advantage on AC of <span class="math notranslate nohighlight">\(20\)</span> and bare +<span class="math notranslate nohighlight">\(3\)</span> bonus on AC of <span class="math notranslate nohighlight">\(24\)</span>, but in other cases it’s strictly inferior. Reasoning is quite similar to that of <em>residence</em>.</p>
 </div>
 <div class="section" id="honorable-mention-elven-accuracy">
 <h3>Honorable mention: Elven Accuracy<a class="headerlink" href="#honorable-mention-elven-accuracy" title="Permalink to this headline">¶</a></h3>
