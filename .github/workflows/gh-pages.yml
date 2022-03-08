@@ -17,6 +17,7 @@ jobs:
       with:
         activate-environment: jupyter-book
         environment-file: dev-environment.yml
+        auto-activate-base: false
 
     - name: Build the book
       run: |
