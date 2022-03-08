@@ -19,6 +19,6 @@ If you're a player, you may want to optimize your perfomance in a combat-oriente
 After all, it is just a small excursion into how the game works, so you may also read it out of pure interest.
 
 ## Table of Contents
-1) [Basic math behind it all](math.ipynb)
-2) [Advantages of advantage](advantage.ipynb)
+1) [Math Basics](math.ipynb)
+2) [Advantages of Advantage](advantage.ipynb)
 3) [Duality of dual wielding](dual.ipynb)

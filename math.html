@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First and foremost &#8212; Math Behind D&amp;D</title>
+    <title>Math Basics &#8212; Math Behind D&amp;D</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Advantage and Disadvantage" href="advantage.html" />
+    <link rel="next" title="Advantages of Advantage" href="advantage.html" />
     <link rel="prev" title="Intro" href="README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -98,17 +98,17 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   First and foremost
+   Math Basics
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="advantage.html">
-   Advantage and Disadvantage
+   Advantages of Advantage
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dual.html">
-   Duality of dual wielding
+   Duality of Dual Wielding
   </a>
  </li>
 </ul>
@@ -201,7 +201,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>First and foremost</h1>
+                <h1>Math Basics</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -212,8 +212,8 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="first-and-foremost">
-<h1>First and foremost<a class="headerlink" href="#first-and-foremost" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="math-basics">
+<h1>Math Basics<a class="headerlink" href="#math-basics" title="Permalink to this headline">¶</a></h1>
 <p>Let’s give you small excursus into discrete probability theory. There are <em>events</em> that have <em>probabilities</em>. We will mostly talk about <em>independant events</em>, which do not affect each other, such as two consequent dice rolls. In our case, <em>event</em> is a value that you rolled on your dice. For example, probability of rolling <span class="math notranslate nohighlight">\(20\)</span> on a d20 equals to <span class="math notranslate nohighlight">\(1/20 = 0.05\)</span>.</p>
 <p><em>Mathematical expectation</em> or <em>mean</em> is actually the mean value that you will get while rolling your dice and is defined by following formula:</p>
 <div class="math notranslate nohighlight">
@@ -225,11 +225,12 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="math notranslate nohighlight">
 \[ Var(a) = E((a-E(a))^2) = E(a^2) - E(a)^2 \]</div>
 <p>Again, I will calculate it for an abstract d<strong>N</strong>:</p>
-<p>\begin{gather*}
-E(a^2) = \sum_{j=1}^N j^2 \cdot p(j) = \left(\sum_{j=1}^N j^2\right) \cdot \frac{1}{N} = \frac{N\cdot(N+1)\cdot(2N+1)}{6\cdot N} = \frac{(N+1)\cdot(2N+1)}{6}\
-E(a)^2 = \left(\frac{N+1}{2}\right)^2\
-Var(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
-\end{gather*}</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
+    E(a^2) = \sum_{j=1}^N j^2 \cdot p(j) = \left(\sum_{j=1}^N j^2\right) \cdot \frac{1}{N} = \frac{N\cdot(N+1)\cdot(2N+1)}{6\cdot N} = \frac{(N+1)\cdot(2N+1)}{6}\\
+    E(a)^2 = \left(\frac{N+1}{2}\right)^2\\
+    Var(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
+\end{gather*}\]</div>
 <p>Thus, for d20 expectation equals to <span class="math notranslate nohighlight">\(10.5\)</span> and deviation equals to <span class="math notranslate nohighlight">\(33.25\)</span>.</p>
 <p>All this formulas will be useful later. Let’s get started.</p>
 </div>
@@ -269,7 +270,7 @@ Var(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
     <a class='right-next' id="next-link" href="advantage.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Advantage and Disadvantage</p>
+        <p class="prev-next-title">Advantages of Advantage</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -280,9 +281,9 @@ Var(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
     <footer class="footer">
   <p>
     
-      By Pavel Martynov (Covariance)<br/>
+      By Pavel Martynov<br/>
     
-        &copy; Copyright 2021.<br/>
+        &copy; Copyright 2022.<br/>
   </p>
 </footer>
 </main>
