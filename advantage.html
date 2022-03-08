@@ -222,6 +222,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advantage-versus-3-bonus-another-round">
+     Advantage versus +3 bonus: another round
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#new-old-contender-bless">
      New-old contender: bless.
     </a>
@@ -276,6 +281,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advantage-versus-3-bonus-another-round">
+     Advantage versus +3 bonus: another round
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#new-old-contender-bless">
      New-old contender: bless.
     </a>
@@ -296,18 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Set</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span>
-
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="n">arange</span><span class="p">,</span> <span class="n">repeat</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">ndarray</span> <span class="k">as</span> <span class="n">Array</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span><span class="p">;</span> <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+  <div class="cell tag_remove-input docutils container">
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="advantages-of-advantage">
 <h1>Advantages of Advantage<a class="headerlink" href="#advantages-of-advantage" title="Permalink to this headline">¶</a></h1>
@@ -343,8 +342,8 @@ Let’s write some code and calculate expectation and deviation:</p>
 <span class="s1">Advantage expectation:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
 <span class="s1">Disadvantage expectation: </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
 
-<span class="s1">Advantage deviation:      </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
-<span class="s1">Disadvantage deviation:   </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Advantage variance:       </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;advantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Disadvantage variance:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;disadvantage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -353,13 +352,13 @@ Let’s write some code and calculate expectation and deviation:</p>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Advantage expectation:    13.825
 Disadvantage expectation: 7.175
 
-Advantage deviation:      22.194375
-Disadvantage deviation:   22.194375
+Advantage variance:       22.194375
+Disadvantage variance:    22.194375
 </pre></div>
 </div>
 </div>
 </div>
-<p>As it can be seen, advantage adds <span class="math notranslate nohighlight">\(3.325\)</span> to the mean and disadvantage subtracts the same value, while both of their deviations are lowered by somewhat around <span class="math notranslate nohighlight">\(11\)</span>, which means improved consistency of throws (if you don’t know to what values I’m talking, be sure to check the <span class="xref myst">Math</span> section).</p>
+<p>As it can be seen, advantage adds <span class="math notranslate nohighlight">\(3.325\)</span> to the mean and disadvantage subtracts the same value, while both of their deviations are lowered by somewhat around <span class="math notranslate nohighlight">\(11\)</span>, which means improved consistency of throws (if you don’t know to what values I’m talking, be sure to check the <a class="reference internal" href="math.html"><span class="doc std std-doc">math</span></a> section).</p>
 <div class="section" id="ability-checks-and-saving-throws-alas-poor-advantage">
 <h2>Ability checks and saving throws: Alas, poor advantage!<a class="headerlink" href="#ability-checks-and-saving-throws-alas-poor-advantage" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="advantage-versus-3-bonus-fight">
@@ -406,7 +405,7 @@ Disadvantage deviation:   22.194375
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/advantage_10_0.png" src="_images/advantage_10_0.png" />
+<img alt="_images/advantage_11_0.png" src="_images/advantage_11_0.png" />
 </div>
 </div>
 <p>Сounterintuitively, in <em>some</em> cases constant bonus is better than advantage. It can be seen that when Difficulty Class is bigger or equal to <span class="math notranslate nohighlight">\(18\)</span>, constant bonus is strictly better in terms of probability.</p>
@@ -433,7 +432,7 @@ Disadvantage deviation:   22.194375
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/advantage_14_0.png" src="_images/advantage_14_0.png" />
+<img alt="_images/advantage_15_0.png" src="_images/advantage_15_0.png" />
 </div>
 </div>
 <p>We were almost right, in <strong>most</strong> cases, <em>residence</em> is slightly inferior than +<span class="math notranslate nohighlight">\(3\)</span> bonus, and it behaves in almost the same way - it overcomes advantage on some AC values. But if you’re perceptive enough, you can see, that in the very end of the graphic <em>bless</em> overcomes +<span class="math notranslate nohighlight">\(3\)</span> bonus. It happens, when DC is equal to <span class="math notranslate nohighlight">\(24\)</span>:</p>
@@ -462,6 +461,8 @@ Advantage: 0.0
 </div>
 <div class="section" id="attacks-from-zero-to-hero">
 <h2>Attacks: from zero to hero!<a class="headerlink" href="#attacks-from-zero-to-hero" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="advantage-versus-3-bonus-another-round">
+<h3>Advantage versus +3 bonus: another round<a class="headerlink" href="#advantage-versus-3-bonus-another-round" title="Permalink to this headline">¶</a></h3>
 <p>Advantage may make poor impression when talking about ability checks and saving throws. But in terms of attacking it really shines. It happens mostly because of crit on the roll of <span class="math notranslate nohighlight">\(20\)</span> and guaranteed miss on the roll of <span class="math notranslate nohighlight">\(1\)</span>. Let’s put advantage back on it’s pedestal!</p>
 <p>First, let’s compare <strong>chances to hit</strong> an enemy while having advantage and +<span class="math notranslate nohighlight">\(3\)</span> bonus to the attack:</p>
 <div class="cell docutils container">
@@ -495,7 +496,7 @@ Advantage: 0.0
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/advantage_21_0.png" src="_images/advantage_21_0.png" />
+<img alt="_images/advantage_23_0.png" src="_images/advantage_23_0.png" />
 </div>
 </div>
 <p>As it can be seen, now advantage is looking much better, but bare bonus still surpasses it on high values of AC, on the segment from <span class="math notranslate nohighlight">\(18\)</span> to <span class="math notranslate nohighlight">\(23\)</span> to be exact.</p>
@@ -539,7 +540,7 @@ Advantage: 0.0
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/advantage_26_0.png" src="_images/advantage_26_0.png" />
+<img alt="_images/advantage_28_0.png" src="_images/advantage_28_0.png" />
 </div>
 </div>
 <p>Now advantage greatly overcomes bare bonus in most cases, except for AC values of <span class="math notranslate nohighlight">\(19\)</span>, <span class="math notranslate nohighlight">\(20\)</span> and <span class="math notranslate nohighlight">\(21\)</span>:</p>
@@ -572,6 +573,7 @@ Advantage: 0.4875
 </div>
 </div>
 </div>
+</div>
 <div class="section" id="new-old-contender-bless">
 <h3>New-old contender: bless.<a class="headerlink" href="#new-old-contender-bless" title="Permalink to this headline">¶</a></h3>
 <p><em>Bless</em> spell affects attack rolls in the same way as <em>residence</em> affects saving throws and ability checks: by adding a d4 to the result.</p>
@@ -594,7 +596,7 @@ Advantage: 0.4875
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/advantage_32_0.png" src="_images/advantage_32_0.png" />
+<img alt="_images/advantage_34_0.png" src="_images/advantage_34_0.png" />
 </div>
 </div>
 <p><em>Bless</em> overcomes advantage on AC of <span class="math notranslate nohighlight">\(20\)</span> and bare +<span class="math notranslate nohighlight">\(3\)</span> bonus on AC of <span class="math notranslate nohighlight">\(23\)</span>, but in other cases it’s strictly inferior.</p>
@@ -614,14 +616,14 @@ Advantage: 0.4875
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">Advantage expectation:    </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
-<span class="s1">Advantage deviation:      </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">Advantage variance:       </span><span class="si">{</span><span class="n">outcomes</span><span class="p">[</span><span class="s1">&#39;elven&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">}</span><span class="s1"></span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Advantage expectation:    15.4875
-Advantage deviation:      14.95834375
+Advantage variance:       14.95834375
 </pre></div>
 </div>
 </div>
@@ -637,7 +639,7 @@ Advantage deviation:      14.95834375
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="_images/advantage_39_0.png" src="_images/advantage_39_0.png" />
+<img alt="_images/advantage_41_0.png" src="_images/advantage_41_0.png" />
 </div>
 </div>
 <p>As it can be easily seen, <em>elven accuracy</em> is far superior than any other type of bonus. We have a honorably mentioned winner!</p>
