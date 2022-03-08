@@ -1,6 +1,7 @@
 # Book settings
-title  : Math Behind D&D
-author : Pavel Martynov (Covariance)
+title     : Math Behind D&D
+author    : Pavel Martynov
+copyright : "2022"
 
 # Execution settings
 execute:
@@ -9,8 +10,23 @@ execute:
   stderr_output     : show
 
 # Parse and render settings
+parse:
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
 
 # HTML-specific settings
+html:
+  extra-navbar: ""
 
 # LaTeX-specific settings
 latex:
