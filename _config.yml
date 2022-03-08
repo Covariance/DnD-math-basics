@@ -14,7 +14,7 @@ execute:
 
 # LaTeX-specific settings
 latex:
-  latex-engine: xelatex
+  latex-engine: pdflatex
 
 # Launch button settings
 repository:
