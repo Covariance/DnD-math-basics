@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Advantage and Disadvantage" href="advantage.html" />
-    <link rel="prev" title="What type of player are you?" href="README.html" />
+    <link rel="prev" title="Intro" href="README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -91,7 +91,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="README.html">
-   What type of player are you?
+   Intro
   </a>
  </li>
 </ul>
@@ -194,27 +194,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#thus-for-d20-expectation-equals-to-10-5-and-deviation-equals-to-33-25">
-   Thus, for d20 expectation equals to
-   <span class="math notranslate nohighlight">
-    \(10.5\)
-   </span>
-   and deviation equals to
-   <span class="math notranslate nohighlight">
-    \(33.25\)
-   </span>
-   .
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -227,27 +206,6 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#thus-for-d20-expectation-equals-to-10-5-and-deviation-equals-to-33-25">
-   Thus, for d20 expectation equals to
-   <span class="math notranslate nohighlight">
-    \(10.5\)
-   </span>
-   and deviation equals to
-   <span class="math notranslate nohighlight">
-    \(33.25\)
-   </span>
-   .
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -257,24 +215,23 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="first-and-foremost">
 <h1>First and foremost<a class="headerlink" href="#first-and-foremost" title="Permalink to this headline">¶</a></h1>
 <p>Let’s give you small excursus into discrete probability theory. There are <em>events</em> that have <em>probabilities</em>. We will mostly talk about <em>independant events</em>, which do not affect each other, such as two consequent dice rolls. In our case, <em>event</em> is a value that you rolled on your dice. For example, probability of rolling <span class="math notranslate nohighlight">\(20\)</span> on a d20 equals to <span class="math notranslate nohighlight">\(1/20 = 0.05\)</span>.</p>
-<p><em>Mathematical expectation</em> or <em>mean</em> is actually the mean value that you will get while rolling your dice and is defined by following formula:
-$<span class="math notranslate nohighlight">\( E(a) = \sum j \cdot p(j)\text{,}\)</span><span class="math notranslate nohighlight">\(
-where \)</span>E(a)<span class="math notranslate nohighlight">\( is expectation, \)</span>j<span class="math notranslate nohighlight">\( is value rolled and \)</span>p(j)$ is probability of rolling corresponding value. Thus, for an abstract d<strong>N</strong> dice expectation value is:</p>
+<p><em>Mathematical expectation</em> or <em>mean</em> is actually the mean value that you will get while rolling your dice and is defined by following formula:</p>
+<div class="math notranslate nohighlight">
+\[ E(a) = \sum j \cdot p(j)\text{,}\]</div>
+<p>where <span class="math notranslate nohighlight">\(E(a)\)</span> is expectation, <span class="math notranslate nohighlight">\(j\)</span> is value rolled and <span class="math notranslate nohighlight">\(p(j)\)</span> is probability of rolling corresponding value. Thus, for an abstract d<strong>N</strong> dice expectation value is:</p>
 <div class="math notranslate nohighlight">
 \[ E(dN) = \sum_{j=1}^N j \cdot p(j) = \left(\sum_{j=1}^N j \right) \cdot \frac{1}{N} = \frac{(N \cdot (N+1))}{2\cdot N} = \frac{N+1}{2}\]</div>
-<p>There’s also one very important value — <em>deviation</em>, which defines, how consistent our rolls will be:</p>
+<p>There’s also one very important value — <em>variation</em>, which defines, how consistent our rolls will be:</p>
 <div class="math notranslate nohighlight">
-\[ D(a) = E((a-E(a))^2) = E(a^2) - E(a)^2 \]</div>
+\[ Var(a) = E((a-E(a))^2) = E(a^2) - E(a)^2 \]</div>
 <p>Again, I will calculate it for an abstract d<strong>N</strong>:</p>
 <p>\begin{gather*}
 E(a^2) = \sum_{j=1}^N j^2 \cdot p(j) = \left(\sum_{j=1}^N j^2\right) \cdot \frac{1}{N} = \frac{N\cdot(N+1)\cdot(2N+1)}{6\cdot N} = \frac{(N+1)\cdot(2N+1)}{6}\
 E(a)^2 = \left(\frac{N+1}{2}\right)^2\
-D(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
+Var(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
 \end{gather*}</p>
-<div class="section" id="thus-for-d20-expectation-equals-to-10-5-and-deviation-equals-to-33-25">
-<h2>Thus, for d20 expectation equals to <span class="math notranslate nohighlight">\(10.5\)</span> and deviation equals to <span class="math notranslate nohighlight">\(33.25\)</span>.<a class="headerlink" href="#thus-for-d20-expectation-equals-to-10-5-and-deviation-equals-to-33-25" title="Permalink to this headline">¶</a></h2>
+<p>Thus, for d20 expectation equals to <span class="math notranslate nohighlight">\(10.5\)</span> and deviation equals to <span class="math notranslate nohighlight">\(33.25\)</span>.</p>
 <p>All this formulas will be useful later. Let’s get started.</p>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -306,7 +263,7 @@ D(a) = E(a^2) - E(a)^2 = \frac{(n^2-1)}{12}
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">What type of player are you?</p>
+            <p class="prev-next-title">Intro</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="advantage.html" title="next page">
